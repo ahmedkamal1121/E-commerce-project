@@ -1,0 +1,356 @@
+
+@font-face {
+    font-family: me;
+    src: url("PTSans-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    /* CSS3 */
+}
+
+
+body{
+    font-family: me;
+    background-color: #c9c0b0;
+}
+
+.container{
+     width: 80%;
+     margin: auto;
+}
+
+header{
+    background-color: #776B5D;
+    padding: 10px 0px;
+    
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-content .brand{
+
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+  
+}
+
+
+nav li a{
+    display: block;
+    color: #ffffff;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: me;
+    font-weight: 700;
+  
+  
+}
+
+/* form--------------------------- */
+
+.section-form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    text-align: center;
+    background-color: rgb(48, 66, 72);
+    padding: 20px;
+
+}
+
+
+.section-form h2{
+
+font-size: 50px;
+letter-spacing: 2px;
+color: #ffffff;
+
+}
+
+
+.section-form form input{
+    font-family: me;
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    border: 1px solid white;
+    padding: 5px;
+    outline: 0;
+    font-size: 17px;
+}
+
+
+.section-form form input[type=submit]{
+    font-size: 25px;
+    text-transform: uppercase;
+  height: auto;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+
+/*  */
+
+
+nav ul#userul{
+    display: none;
+    align-items: center;
+}
+nav ul#userul li .badge{
+    width: 16px;
+    height: 19px;
+    background-color: darkred;
+    color: wheat;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.note{
+    display: block;
+    width: 35px;
+    position: relative;
+    margin: 0 10px;
+}
+
+
+.note i{
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    
+
+}
+
+
+.drop{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    position: absolute;
+    background-color: #dbdbdb;
+    padding: 10px;
+    top: 48px;
+    left: -50px;
+    border: 1px solid darkgreen;
+    display: none;
+}
+
+
+.drop a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: darkgreen;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.drop p{
+    font-size: 19px;
+}
+
+
+.search{
+    width: 100%;
+    height: 39px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'me';
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+/*PRODECT*/
+
+
+
+.prodects{
+    width: 60%;
+    margin-top: 15px;
+    float: left;
+}
+
+.felt{
+    float: right;
+    margin-top: 15px;
+    width: 35%;
+}
+
+#filterBy{
+width: 100%;
+height: 40px;
+font-size: 18px;
+}
+
+.prodect-item{
+    display: flex;
+    background-color: white;
+    margin-bottom:15px ;
+    min-height: 150px;
+    border-radius: 10px;
+}
+
+.isme{
+    width: 140px;
+    background-color: #999;
+    padding: 6px 20px;
+    display: block;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'me';
+    cursor: pointer;
+}
+
+
+.prodect-item .pro-img{
+    width: 25%;
+}
+
+
+.divimg{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25%;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+.proect-des{
+    padding: 10px;
+}
+
+.titl{
+    padding: 5px;
+    cursor: pointer;
+   
+}
+
+.prodect-action{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.prodect-action .icon{
+   cursor: pointer;
+}
+
+.prodect-action .add-tocart{
+    color: white;
+    font-weight: 600;
+    background-color: rgb(36, 143, 36);
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 0.5s;
+   
+
+}
+
+.prodect-action .add-tocart:hover{
+    background-color: rgb(17, 77, 17);
+    padding: 15px 20px;
+
+}
+
+.show{
+    margin-top: 5px;
+    border: 2px solid gray;
+}
+
+.show img{
+    padding: 3px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+.creatprodect{
+
+    background-color: teal;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+
+.creatprodect i{
+    padding: 10px;
+    color: white;
+
+}
+
+
+/* profile */
+
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+
+/*  */
+
+#enlang,#arlang{
+color: white;
+margin: 0 3px;
+cursor: pointer;
+}

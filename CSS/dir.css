@@ -1,0 +1,10 @@
+
+
+
+[dir="rtl"] .prodects{
+    float: right;
+}
+
+[dir="rtl"] .felt{
+    float: left;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creat new project</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/creatpp.css">
+    
+</head>
+<body>
+       
+    <header>
+        <div class="container">
+             <div class="header-content">
+                <a href="index.html" class="brand"> Shopping  Cart</a>
+
+                <nav>
+                   <ul id="links">
+                            <li> <a href="login.html">Sign in</a></li>
+                            
+                            <li> <a href="rsgister.html"> Sign up</a></li>
+                   </ul>
+                     
+                   <ul id="userul">
+                       <li><a href="fav.html">fav</a></li>        
+                    <li><a href="" id="userli"></a></li>  
+                        <li class="note"> 
+                            <i class="fa fa-shopping-cart"></i>
+                                                            <div class="drop">
+                                                                <div></div>
+                                                                <a href="cart.html">viwe all prodects</a>
+                                                            </div>
+                            <span class="badge"></span></li>
+                    <li><a href="" id="logout" >logout</a></li>
+                   </ul>
+                
+                </nav>
+             </div>
+        </div>
+    </header>
+
+
+
+  <section class="creatPP-page">
+
+    <div class="container">
+        <form  class="form">
+            <input type="file"  id="uplode-img">
+            <input type="text"  id="namec" placeholder="name...">
+            <input type="text"  id="desc" placeholder="des...">
+
+            <select name="" id="slect">
+                <option value="" hidden>selest size</option>
+                <option value="small">small</option>
+                <option value="mediam">mediam</option>
+                <option value="large">large</option>
+            </select>
+
+            <input type="submit" value="creat" class="submite">
+        </form>
+    </div>
+  
+  </section>
+  <script src="JS/creatpp.js"></script>
+    <script src="JS/user.js"></script>
+    <script src="JS/data.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
